@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="C:\Users\B.ManiRam\Functional Gym\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        table, th, td{
+            border: 1px solid #555;
+            margin-top:100px;
+            margin-bottom: 250px;
+            width:100%;
+        }
+        th{
+            height:70px;
+        }
+    </style>
+</head>
+<body>
+ <div class="header">
+  <div class="container">
+      <div class="navbar">
+       <div class="logo">
+          <img src="Images/logo.png" width="125px">
+       </div>
+       <nav>
+           <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+               
+           </ul>
+       </nav>
+       <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+   </div>
+  </div>
+  <div class="row">
+      <table>
+          <tr>
+              <th>plan</th>
+              <th>price</th>
+          </tr>
+          <tr>
+              <td>Gym monthly membership(30 days)</td>
+              <td>400&#8377</td>
+          </tr>
+           <tr>
+              <td>Gym 6 months membership</td>
+              <td>2000&#8377</td>
+          </tr> <tr>
+              <td>Gym 1 year membership</td>
+              <td>3750&#8377</td>
+          </tr> <tr>
+              <td>Gym membership + personal trainer </td>
+              <td>700&#8377</td>
+          </tr> <tr>
+              <td>Gym 6 month membership + personal trainer</td>
+              <td>3500&#8377</td>
+          </tr>
+      </table>
+  </div>
+</div> 
+<!-------------footer----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+               <div class="footer-col-1">
+                    <img src="Images/logo.png" >
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Terms&Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Join us</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023-Functional Gym</p>
+        </div>
+    </div>
+<!----------js for toggle menu--------->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Section */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px; /* Adjusted spacing for better alignment */
+}
+
+a {
+  text-decoration: none;
+  color: deepskyblue;
+  display: block;
+  font-size: 18px; /* Adjusted font size for consistency */
+  padding: 10px; /* Added padding for better click area */
+  transition: color 0.3s, border 0.3s, background-color 0.3s, font-size 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  background-color: deepskyblue; /* Changed background color on hover */
+  border: 2px solid #fff; /* Updated border style for better visibility */
+  border-radius: 5px; /* Slightly larger border-radius for a softer look */
+  font-size: 20px; /* Slightly larger font size on hover */
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #00BFFF;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: width 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: deepskyblue; /* Changed background color on hover */
+  border: 2px solid #fff; /* Updated border style for better visibility */
+  border-radius: 5px; /* Slightly larger border-radius for a softer look */
+  font-size: 20px;
+}
+
+.header {
+  background: radial-gradient(#fff, #AFEEEE);
+}
+
+.categories {
+  margin: 70px 0;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after {
+  content: '';
+  background: #00BFFF;
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+.col-5 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-5 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-5 p {
+  padding: 15px;
+}
+
+#cn {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid #00BFFF;
+  border-radius: 50%;
+  padding-top: 40px;
+}
+
+/* Contact Page Styles */
+.contact-container {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+  text-align: center;
+  background: rgb(111, 111, 111);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h2 {
+  margin-bottom: 20px;
+  color: #00BFFF;
+}
+
+.contact-item p {
+  margin: 10px 0;
+  color:black;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.contact-item img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #00BFFF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-1 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-2, .footer-col-3 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  padding-bottom: 50px;
+}
+
+/* Media Query for the Menu */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    position: static;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    margin-bottom: 0;
+  }
+}
+
+/* Products Page Styles */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+select {
+  border: 1px solid #00BFFF;
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #00BFFF;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: #00BFFF;
+  color: #fff;
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(156, 156, 218);
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+  background-color: rgb(156, 156, 218);
+}
